@@ -43,7 +43,6 @@ function Get-WhatIfStatus {
     )
 
 
-    Write-Host $subscriptionName $sourceBranch 
     $subName = @("sub-lztstcorp-dev", "sub-lztstonline-dev", "sub-lztstcorp-build", "sub-lztstonline-build")
 
     # initial WhatIf status
@@ -63,14 +62,10 @@ function Get-WhatIfStatus {
       }else
       {
     $subFlag = $subName -Contains $subscriptionName
-    Write-Host $subFlag
-    Write-Verbose $subFlag
-    #SubFlag is true then the Subscription is present in the list
-    #SubFlag is false then the Subscription is NOT present in the list
+
     if($subFlag -eq 'true'){
         $WhatIfStatus = $false
-        ##If the pipeline is run from the feature branch and the subscription is present on the list 
-        ##then set the whatIfStatus value should be true.
+
         }      
     }
     
