@@ -4,6 +4,7 @@
     douhkd#cprPeo9we
     
     https://learn.microsoft.com/en-us/azure/devops/repos/git/import-git-repository?view=azure-devops
+    git clone https://<<username>>:<<password>>@<<remaining clone Url>>
     
 
     
