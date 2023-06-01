@@ -3,6 +3,8 @@
     X001680@aldi-nord.com
     douhkd#cprPeo9we
     
+    https://learn.microsoft.com/en-us/azure/devops/repos/git/import-git-repository?view=azure-devops
+    
 
     
     MY_PAT=fnncrw7lyiknfpqmv5wrr7bbahvmzo3oszukms3bdstvymko6kha
