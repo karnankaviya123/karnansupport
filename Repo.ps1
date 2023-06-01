@@ -37,6 +37,15 @@
     git status
     cd ../AN-Azure-TestProject-ControlRepo
     ls -ltra
+    
+    git config --global user.email "X001680@aldi-nord.com"
+    git config --global user.name "Karnan Kali"
+    git clone --bare https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-DevOps-ControlRepo/_git/AN-Azure-DevOps-ControlRepo-non-SAP 
+    echo "Started"
+    ls -lrta
+    cd AN-Azure-DevOps-ControlRepo-non-SAP
+    git push --mirror https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-TestProject-ControlRepo/_git/AN-Azure-TestProject-ControlRepo
+    echo "Completed"
 
 
 
