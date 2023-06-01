@@ -72,6 +72,30 @@ echo "Something"
 git push -c http.extraHeader="Authorization: Basic ${B64_PAT}" --mirror https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-TestProject-ControlRepo/_git/AN-Azure-TestProject-ControlRepo
 echo "Completed"
 
+
+[19:04] Aishwarya S
+
+
+
+
+git push https://$env:SYSTEM_ACCESSTOKEN@dev.azure.com/
+
+
+
+
+
+
+
+[19:04] Aishwarya S
+
+
+
+
+git push https://{PAT}@dev.azure.com/{organization}/{project}/_git/{repo-name}
+
+
+
+
         
 
 
