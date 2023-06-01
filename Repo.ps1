@@ -61,6 +61,16 @@ WARNING: Failed to store PAT using keyring; falling back to file storage.
 WARNING: You can clear the stored credential by running az devops logout.
 WARNING: Refer https://aka.ms/azure-devops-cli-auth to know more on sign in with PAT.
 
+
+MY_PAT=fnncrw7lyiknfpqmv5wrr7bbahvmzo3oszukms3bdstvymko6kha
+B64_PAT=$(printf "%s"":$MY_PAT" | base64)
+git -c --bare http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-DevOps-ControlRepo/_git/AN-Azure-DevOps-ControlRepo-non-SAP
+ls -ltra
+cd AN-Azure-DevOps-ControlRepo-non-SAP
+echo "Something"
+git push -c http.extraHeader="Authorization: Basic ${B64_PAT}" --mirror https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-TestProject-ControlRepo/_git/AN-Azure-TestProject-ControlRepo
+echo "Completed"
+
         
 
 
