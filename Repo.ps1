@@ -1,6 +1,9 @@
     echo  "######" | az devops login --organization https://dev.azure.com/contoso/
     
+    X001680@aldi-nord.com
+    douhkd#cprPeo9we
     
+
     
     MY_PAT=fnncrw7lyiknfpqmv5wrr7bbahvmzo3oszukms3bdstvymko6kha
     B64_PAT=$(printf "%s"":$MY_PAT" | base64)
