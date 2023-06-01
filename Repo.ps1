@@ -1,3 +1,7 @@
+    echo  "######" | az devops login --organization https://dev.azure.com/contoso/
+    
+    
+    
     MY_PAT=fnncrw7lyiknfpqmv5wrr7bbahvmzo3oszukms3bdstvymko6kha
     B64_PAT=$(printf "%s"":$MY_PAT" | base64)
     git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-DevOps-ControlRepo/_git/AN-Azure-DevOps-ControlRepo-non-SAP -b main
