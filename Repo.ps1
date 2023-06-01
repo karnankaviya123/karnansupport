@@ -41,12 +41,11 @@ az devops configure --defaults organization=https://dev.azure.com/fabrikamprime 
 
         az devops configure --defaults organization=https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-DevOps-ControlRepo project="AN-Azure-TestProject-ControlRepo"
 
+/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/e0878650-06f2-4f34-abe6-1e99778674fc.sh
+WARNING: Failed to store PAT using keyring; falling back to file storage.
+WARNING: You can clear the stored credential by running az devops logout.
+WARNING: Refer https://aka.ms/azure-devops-cli-auth to know more on sign in with PAT.
 
-
-
-
-	
-            Azure DevOps Services | Sign In
         
 
 
