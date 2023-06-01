@@ -33,6 +33,11 @@
 az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"
 
 
+        az repos import create --git-source-url https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-DevOps-ControlRepo --repository AN-Azure-DevOps-ControlRepo-non-SAP
+
+        az devops configure --defaults organization=https://an-de-ohg-sbi@dev.azure.com/an-de-ohg-sbi/AN-Azure-DevOps-ControlRepo project="AN-Azure-TestProject-ControlRepo"
+
+
 
 
 
