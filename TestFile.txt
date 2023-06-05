@@ -1,1 +1,5 @@
 Install-Module -Name Az.ResourceGraph -Scope CurrentUser -Force
+[string]$resourceGroupName = "rg-"+$project+"-"+$stage+"-tfstate"
+# Check if the target Subscription ID not matching the subscription that is retuned from the graph query, if not matchinf create the new storage account.
+    # If the Subscription retuned from graph query is matching the target Subscription then we check for the resource group matching, if the rg of the target Subscription where the SA should be created does not match with the rg name retuned from the graph query, then new storage account will be created.
+ if (($graphQueryResult.subscriptionId -ne $subscriptionId) -or ($graphQueryResult.subscriptionId -eq $subscriptionId -and $graphQueryResult.resourceGroup -ne $resourceGroupName)) {
